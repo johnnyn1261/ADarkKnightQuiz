@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.adarkknightquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal"
+            android:text="Welcome to a Dark Knight Quiz: A curated list of 5 questions that only true Batman fans will know. Test your skills to see how well you know the Caped Crusader."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Question 1: Which one of the following villains did not appear in the classic story, &quot;The Long Halloween?&quot;" />
+
+        <RadioGroup
+            android:id="@+id/question1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/one_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Mad Hatter" />
+
+            <RadioButton
+                android:id="@+id/one_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carmine Falcone" />
+
+            <RadioButton
+                android:id="@+id/one_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calendar Man" />
+
+            <RadioButton
+                android:id="@+id/one_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Killer Croc" />
+
+            <RadioButton
+                android:id="@+id/one_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Poison Ivy" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Question 2: In the comicbook story arch, &quot;FlashPoint&quot;, how did Batman (Thomas Wayne) finish off Reverse Flash?" />
+
+        <RadioGroup
+            android:id="@+id/question2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/two_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shot him with the handgun that murdered Bruce" />
+
+            <RadioButton
+                android:id="@+id/two_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stabbed him with an Amazonian Sword" />
+
+            <RadioButton
+                android:id="@+id/two_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strangled him with the Lasso of Truth" />
+
+            <RadioButton
+                android:id="@+id/two_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lobotomized him with Subject 1's help" />
+
+            <RadioButton
+                android:id="@+id/two_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Impaled him on Aquaman's Trident" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Question 3: Which one of the following writers has scripted a fight between the Dark Knight and the Man of Steel?" />
+
+        <RadioGroup
+            android:id="@+id/question3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/three_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jeph Loeb" />
+
+            <RadioButton
+                android:id="@+id/three_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alan Moore" />
+
+            <RadioButton
+                android:id="@+id/three_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grant Morrison" />
+
+            <RadioButton
+                android:id="@+id/three_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lee Bermejo" />
+
+            <RadioButton
+                android:id="@+id/three_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tom King" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Question 4: Batman has had a number of sidekicks. Which one of the following did not dawn the mantle of Robin?" />
+
+        <RadioGroup
+            android:id="@+id/question4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/four_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carrie Kelley" />
+
+            <RadioButton
+                android:id="@+id/four_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jason Todd" />
+
+            <RadioButton
+                android:id="@+id/four_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Damian Wayne" />
+
+            <RadioButton
+                android:id="@+id/four_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stephanie Brown" />
+
+            <RadioButton
+                android:id="@+id/four_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grant Wilson" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Question 5: During &quot;Final Crisis&quot;, where was Batman transported after getting hit by Darkseid's Omega Beam?" />
+
+        <RadioGroup
+            android:id="@+id/question5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/five_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A century into the future" />
+
+            <RadioButton
+                android:id="@+id/five_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.6 million years into the past" />
+
+            <RadioButton
+                android:id="@+id/five_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Darkseid's homeworld: Apokolips" />
+
+            <RadioButton
+                android:id="@+id/five_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gotham City on another Earth" />
+
+            <RadioButton
+                android:id="@+id/five_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No where, he simply died" />
+        </RadioGroup>
+
+        <Button
+            android:text="Submit"
+            android:layout_margin="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="submit"/>
+
+    </LinearLayout>
+
+</ScrollView>
