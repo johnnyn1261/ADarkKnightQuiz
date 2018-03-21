@@ -238,11 +238,11 @@
 
         <Button
             android:text="Submit"
+            android:id="@+id/submit"
             android:layout_margin="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:onClick="submit"/>
+            android:layout_gravity="center" />
 
     </LinearLayout>
 

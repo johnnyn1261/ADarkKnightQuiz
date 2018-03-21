@@ -1,8 +1,10 @@
 package com.example.android.adarkknightquiz;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -34,42 +36,37 @@ public class MainActivity extends AppCompatActivity {
         question5 = findViewById(R.id.question5);
 
         answer1 = findViewById(R.id.one_4);
-        answer2 = findViewById(R.id.two_1);
+        answer2 = findViewById(R.id.two_2);
         answer3 = findViewById(R.id.three_1);
         answer4 = findViewById(R.id.four_5);
         answer5 = findViewById(R.id.five_2);
 
-        score = 0;
+        Button submit_answers = findViewById(R.id.submit);
+        submit_answers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                submit();
+                Intent results = new Intent(MainActivity.this, ResultActivity.class);
+                results.putExtra("result", score);
+                startActivity(results);
+                score = 0;
+            }
+        });
     }
 
-    public void submit(View view) {
+    public void submit() {
         score = 0;
         checkAnswer(question1.getCheckedRadioButtonId(), answer1.getId());
         checkAnswer(question2.getCheckedRadioButtonId(), answer2.getId());
         checkAnswer(question3.getCheckedRadioButtonId(), answer3.getId());
         checkAnswer(question4.getCheckedRadioButtonId(), answer4.getId());
         checkAnswer(question5.getCheckedRadioButtonId(), answer5.getId());
-        Toast.makeText(this, "Your Score is " + score + "/5", Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "Your Score is " + score + "/5", Toast.LENGTH_LONG).show();
     }
 
     public void checkAnswer(int choice, int answer) {
         if (choice == answer) {
             score++;
         }
-
-        /*
-        boolean checked = ((RadioButton) view).isChecked();
-
-        // Check which radio button was clicked
-        switch(view.getId()) {
-            case R.id.radio_pirates:
-                if (checked)
-                    // Pirates are the best
-                    break;
-            case R.id.radio_ninjas:
-                if (checked)
-                    // Ninjas rule
-                    break;
-        }*/
     }
 }
